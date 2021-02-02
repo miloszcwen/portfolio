@@ -4,7 +4,7 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
         email: "a",
-        password: "b"
+        password: "a"
     })
     })
     .then(null)
