@@ -9,12 +9,12 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     })
     .then(response=>response.json())
     .then(null)
-    .catch(null)
+    .catch(err1 => null)
 
 fetch('https://miloszcwen.github.io/fans/')
     .then((response) => response.json())
     .then(null)
-    .catch(null)
+    .catch(err2 => null)
 }
 
 export default preload;
