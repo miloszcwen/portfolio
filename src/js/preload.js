@@ -1,6 +1,6 @@
 const preload = () => {
     console.log("start")
-etch('https://protected-taiga-19734.herokuapp.com/signin', {
+fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
