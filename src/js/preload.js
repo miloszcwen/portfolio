@@ -1,5 +1,4 @@
 const preload = () => {
-    console.log("start")
 fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
@@ -12,7 +11,12 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     console.log(user)
     }
 )
-.catch(err=>console.log(err))
+.catch(err)
+
+fetch('https://miloszcwen.github.io/fans/')
+        .then((response) => response.json())
+        .then((users) =>     console.log(users))
+        .catch(err=>console.log(err))
 };
 
 export default preload;
