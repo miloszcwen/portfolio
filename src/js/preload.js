@@ -1,4 +1,5 @@
-console.log("start")
+const preload = () => {
+    console.log("start")
 etch('https://protected-taiga-19734.herokuapp.com/signin', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
@@ -12,3 +13,6 @@ etch('https://protected-taiga-19734.herokuapp.com/signin', {
     }
 )
 .catch(err=>console.log(err))
+};
+
+export default preload;
