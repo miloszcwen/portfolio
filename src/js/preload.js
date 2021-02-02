@@ -7,13 +7,13 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
         password: "a"
     })
 }).then(response=>response.json())
-.then(user=>console.log(user))
-.catch(err1)
+.then(null)
+.catch(err1=>console.log(err1))
 
 fetch('https://miloszcwen.github.io/fans/')
         .then((response) => response.json())
-        .then((users) => console.log(users))
-        .catch(err2)
+        .then(null)
+        .catch(err2=>console.log(err2))
 };
 
 export default preload;
