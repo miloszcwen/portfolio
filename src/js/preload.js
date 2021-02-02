@@ -4,17 +4,17 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
         email: "a",
-        password: "a"
+        password: "b"
     })
     })
     .then(response=>response.json())
     .then(null)
-    .catch(err1)
+    .catch(null)
 
 fetch('https://miloszcwen.github.io/fans/')
     .then((response) => response.json())
     .then(null)
-    .catch(err2)
+    .catch(null)
 }
 
 export default preload;
