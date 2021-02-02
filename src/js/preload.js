@@ -7,12 +7,10 @@ fetch('https://protected-taiga-19734.herokuapp.com/signin', {
         password: "b"
     })
     })
-    .then(response=>response.json())
     .then(null)
     .catch(err1 => null)
 
 fetch('https://miloszcwen.github.io/fans/')
-    .then((response) => response.json())
     .then(null)
     .catch(err2 => null)
 }
